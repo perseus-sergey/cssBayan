@@ -1,18 +1,16 @@
-.bayan-container {
-    width: 100%;
+.bayan-container{
+    width: 300px;
     margin: 10px auto 30px auto;
 }
 
-.bayan-container input:checked~label {
+.bayan-container input:checked ~ label{
     transition: height 0.5s ease-in-out;
 }
-
 .bayan-container label:hover,
-.bayan-container input:checked~label {
+.bayan-container input:checked ~ label{
     height: 250px;
 }
-
-.bayan-container label {
+.bayan-container label{
     font-family: Arial, sans-serif;
     padding: 5px 20px;
     position: relative;
@@ -21,7 +19,7 @@
     height: 30px;
     cursor: pointer;
     color: #777;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     line-height: 33px;
     font-size: 1em;
     background-color: rgb(196, 232, 255);
@@ -33,16 +31,15 @@
     transition: height 0.3s ease-in-out;
 }
 
-.bayan-container input {
+.bayan-container input{
     display: none;
 }
-
 .bayan-container label:after{
-    display: block;
+    display: none;
 }
-.bayan-container:hover label:after {
+.bayan-container:hover label:after{
     content: '';
-    /* display: block; */
+    display: block;
     border-style: solid;
     border-width: 5px 0 5px 8px;
     border-color: transparent transparent transparent #CCCCCC;
@@ -51,51 +48,38 @@
     right: 15px;
     transition: rotate 0.5s, color 0.5s;
 }
-
-.bayan-container:hover input:checked+label:after,
-.bayan-container:hover input:hover+label:after {
+.bayan-container:hover input:checked + label:after,
+.bayan-container:hover input:hover + label:after{
     border-width: 5px 0 5px 8px;
     border-color: transparent transparent transparent #CCCCCC;
     top: 15px;
     rotate: 90deg;
     transition: rotate 0.5s, color 0.5s;
 }
-
 label[for="bayan-1"] {
-    background-image: url(../images/congrats.svg);
-}
-
+    background-image: url(../images/feature-in-disguise.svg);
+  }
 label[for="bayan-2"] {
     background-image: url(../images/git-problem.svg);
-}
-
+  }
 label[for="bayan-3"] {
     background-image: url(../images/git-remote.svg);
-}
-
+  }
 label[for="bayan-4"] {
     background-image: url(../images/glory-to-ukraine.svg);
-}
-
+  }
 label[for="bayan-5"] {
     background-image: url(../images/github-friends.svg);
-}
+  }
 
 @media screen and (max-width: 800px) {
     body {
         font-size: 1.5em;
     }
 }
-
 @media screen and (max-width: 320px) {
 
     body {
         font-size: 2em;
     }
 }
-@media (hover: hover) {
-    
-    .bayan-container label:after{
-        display: none;
-    }
-  }
