@@ -9,7 +9,6 @@
 .bayan-container label:hover,
 .bayan-container input:checked ~ label{
     height: 250px;
-  
 }
 .bayan-container label{
     font-family: Arial, sans-serif;
