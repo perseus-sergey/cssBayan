@@ -25,7 +25,7 @@
     background-color: rgb(196, 232, 255);
     background-position-x: center;
     background-position-y: 50px;
-    background-size: bayan-container;
+    background-size: 45%;
     background-repeat: no-repeat;
     border-top: .1px solid black;
     transition: height 0.3s ease-in-out;
@@ -56,19 +56,19 @@
     rotate: 90deg;
     transition: rotate 0.5s, color 0.5s;
 }
-label:nth-child(1) {
+label[for="bayan-1"] {
     background-image: url(../images/feature-in-disguise.svg);
   }
-label:nth-child(2) {
+label[for="bayan-2"] {
     background-image: url(../images/git-problem.svg);
   }
-label:nth-child(3) {
+label[for="bayan-3"] {
     background-image: url(../images/git-remote.svg);
   }
-label:nth-child(4) {
+label[for="bayan-4"] {
     background-image: url(../images/glory-to-ukraine.svg);
   }
-label:nth-child(5) {
+label[for="bayan-5"] {
     background-image: url(../images/github-friends.svg);
   }
 
