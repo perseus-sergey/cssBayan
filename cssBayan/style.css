@@ -1,0 +1,79 @@
+.bayan-container{
+    width: 400px;
+    margin: 10px auto 30px auto;
+}
+
+.bayan-container input:checked ~ label{
+    transition: height 0.5s ease-in-out;
+}
+.bayan-container label:hover,
+.bayan-container input:checked ~ label{
+    height: 250px;
+  
+}
+.bayan-container label{
+    font-family: Arial, sans-serif;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 19px;
+    background-image: url(http://1funny.com/wp-content/uploads/2011/12/cat-face.jpg);
+    background-position-y: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: .1px solid black;
+    transition: height 0.3s ease-in-out;
+}
+
+.bayan-container input:checked + label,
+.bayan-container input:checked + label:hover{
+/*     background: red;
+    color: grey; */
+}
+
+.bayan-container input{
+    display: none;
+}
+.bayan-container section{
+/*     background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: height 0.3s ease-in-out; */
+}
+
+.kitten{
+/*   max-width:100%;
+  height:auto;
+  cursor: pointer; */
+}
+.bayan-container label:after{
+    display: none;
+}
+.bayan-container:hover label:after{
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #CCCCCC;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: rotate 0.5s, color 0.5s;
+}
+.bayan-container:hover input:checked + label:after,
+.bayan-container:hover input:hover + label:after{
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #CCCCCC;
+    top: 15px;
+    rotate: 90deg;
+    transition: rotate 0.5s, color 0.5s;
+}
