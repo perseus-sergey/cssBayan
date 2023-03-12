@@ -23,7 +23,6 @@
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     line-height: 33px;
     font-size: 19px;
-    background-image: url(http://1funny.com/wp-content/uploads/2011/12/cat-face.jpg);
     background-position-y: 50px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,29 +30,8 @@
     transition: height 0.3s ease-in-out;
 }
 
-.bayan-container input:checked + label,
-.bayan-container input:checked + label:hover{
-/*     background: red;
-    color: grey; */
-}
-
 .bayan-container input{
     display: none;
-}
-.bayan-container section{
-/*     background: rgba(255, 255, 255, 0.5);
-    margin-top: -1px;
-    overflow: hidden;
-    height: 0px;
-    position: relative;
-    z-index: 10;
-    transition: height 0.3s ease-in-out; */
-}
-
-.kitten{
-/*   max-width:100%;
-  height:auto;
-  cursor: pointer; */
 }
 .bayan-container label:after{
     display: none;
@@ -77,3 +55,18 @@
     rotate: 90deg;
     transition: rotate 0.5s, color 0.5s;
 }
+label:nth-child(1) {
+    background-image: url(images/feature-in-disguise.svg);
+  }
+label:nth-child(2) {
+    background-image: url(images/git-problem.svg);
+  }
+label:nth-child(3) {
+    background-image: url(images/git-remote.svg);
+  }
+label:nth-child(4) {
+    background-image: url(images/glory-to-ukraine.svg);
+  }
+label:nth-child(5) {
+    background-image: url(images/github-friends.svg);
+  }
