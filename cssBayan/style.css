@@ -1,5 +1,5 @@
 .bayan-container{
-    width: 300px;
+    width: 50%;
     margin: 10px auto 30px auto;
 }
 
@@ -8,7 +8,7 @@
 }
 .bayan-container label:hover,
 .bayan-container input:checked ~ label{
-    height: 250px;
+    height: 300px;
 }
 .bayan-container label{
     font-family: Arial, sans-serif;
@@ -25,7 +25,7 @@
     background-color: rgb(196, 232, 255);
     background-position-x: center;
     background-position-y: 50px;
-    background-size: 45%;
+    background-size: 35%;
     background-repeat: no-repeat;
     border-top: .1px solid black;
     transition: height 0.3s ease-in-out;
@@ -76,10 +76,31 @@ label[for="bayan-5"] {
     body {
         font-size: 1.5em;
     }
+    h1 {
+        text-align:center;
+      }
+    .bayan-container label{
+        background-size: 55%;
+        height: 40px;
+        line-height: 43px;
+        background-position-y: 50px;
+    
+    }
+      .bayan-container{
+        width: 70%;
+    
+    }
 }
 @media screen and (max-width: 320px) {
 
-    body {
-        font-size: 2em;
+    .bayan-container label{
+
+        background-size: 55%;
+        background-position-y: 70px;
+    
+    }
+      .bayan-container{
+        width: 90%;
+    
     }
 }
