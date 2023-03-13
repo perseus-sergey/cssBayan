@@ -1,53 +1,43 @@
 .bayan-container {
-    width: 50%;
-    margin: 10px auto 30px auto;
-}
-
-.bayan-container input:checked~label {
-    transition: height 0.5s ease-in-out;
-}
-
-.bayan-container label:hover,
-.bayan-container input:checked~label {
-    height: 300px;
+    width: 60%;
+    margin: 1em auto;
 }
 
 .bayan-container label {
-    font-family: Arial, sans-serif;
-    padding: 5px 20px;
+    font-size: 1em;
+    padding: 1em;
     position: relative;
-    z-index: 20;
     display: block;
-    height: 30px;
     cursor: pointer;
     color: #777;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-    line-height: 35px;
-    font-size: 1em;
+    font-size: 1.3em;
     background-color: rgb(196, 232, 255);
-    border-top: .1px solid black;
+    border-top: .1em solid #67a1c4;
     transition: height 0.3s ease-in-out;
 }
 .img {
-    height: 0px;
+    width: 0;
     opacity: 0;
     display: block;
     margin: auto;
-    transition: height .3s, opacity .3s;
+    transition: all .3s;
 }
 .bayan-container label:hover .img,
 .bayan-container input:checked~label .img {
     opacity: 1;
-    height: 250px;
-    transition: height .3s, opacity .3s;
+    width: 90%;
+    transition: all .3s;
 }
 
 .bayan-container input {
     display: none;
 }
+
 .bayan-container label:after {
     display: none;
 }
+
 .bayan-container:hover label:after {
     content: '';
     display: block;
@@ -55,8 +45,9 @@
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #6f95a3;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    /* position: relative; */
+    top: 1em;
+    right: 1em;
     transition: rotate 0.5s, color 0.5s;
 }
 
@@ -64,7 +55,7 @@
 .bayan-container:hover input:hover+label:after {
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #6f95a3;
-    top: 15px;
+    top: 1em;
     rotate: 90deg;
     transition: rotate 0.5s, color 0.5s;
 }
@@ -76,18 +67,16 @@
     h1 {
         text-align: center;
     }
-    .bayan-container label {
-        height: 40px;
-        line-height: 45px;
-    }
     .bayan-container {
         width: 70%;
     }
 }
 
 @media screen and (max-width: 320px) {
-
-    .bayan-container {
+    body {
+        font-size: 2em;
+    }
+   .bayan-container {
         width: 90%;
     }
 }
