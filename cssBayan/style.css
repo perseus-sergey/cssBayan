@@ -34,11 +34,11 @@
     display: none;
 }
 
-.bayan-container label:after {
+.bayan-container label .after {
     display: none;
 }
 
-.bayan-container:hover label:after {
+.bayan-container:hover label .after {
     content: '';
     display: block;
     border-style: solid;
@@ -51,8 +51,8 @@
     transition: rotate 0.5s, color 0.5s;
 }
 
-.bayan-container:hover input:checked+label:after,
-.bayan-container:hover input:hover+label:after {
+.bayan-container:hover input:checked+label .after,
+.bayan-container:hover input:hover+label .after {
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #6f95a3;
     top: 1em;
@@ -82,7 +82,7 @@
 }
 
 @media not all and (hover: none) {
-    .bayan-container label:after {
+    .bayan-container label .after {
         display: none;
     }
 }
