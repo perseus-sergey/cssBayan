@@ -1,6 +1,6 @@
 .bayan-container {
-    width: 60%;
-    margin: 1em auto;
+    width: 50%;
+    margin: 10px auto 30px auto;
 }
 
 .bayan-container input:checked~label {
@@ -9,32 +9,45 @@
 
 .bayan-container label:hover,
 .bayan-container input:checked~label {
-    /* height: 50vh; */
+    height: 300px;
 }
 
-.bayan-container label {/* font-family: Arial, sans-serif; */font-size: 1em;padding: 1em;/* position: relative; *//* z-index: 20; */display: block;/* height: 1em; */cursor: pointer;color: #777;text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);/* line-height: 1.1em; */font-size: 1.3em;background-color: rgb(196, 232, 255);border-top: .1em solid #67a1c4;transition: height 0.3s ease-in-out;}
+.bayan-container label {
+    font-family: Arial, sans-serif;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    line-height: 35px;
+    font-size: 1em;
+    background-color: rgb(196, 232, 255);
+    border-top: .1px solid black;
+    transition: height 0.3s ease-in-out;
+}
 .img {
-    width: 0;
+    height: 0px;
     opacity: 0;
     display: block;
     margin: auto;
-    transition: all .3s;
+    transition: height .3s, opacity .3s;
 }
 .bayan-container label:hover .img,
 .bayan-container input:checked~label .img {
     opacity: 1;
-    width: 90%;
-    transition: all .3s;
+    height: 250px;
+    transition: height .3s, opacity .3s;
 }
 
 .bayan-container input {
     display: none;
 }
-
 .bayan-container label:after {
     display: none;
 }
-
 .bayan-container:hover label:after {
     content: '';
     display: block;
@@ -42,8 +55,8 @@
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #6f95a3;
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 15px;
+    right: 15px;
     transition: rotate 0.5s, color 0.5s;
 }
 
@@ -51,7 +64,7 @@
 .bayan-container:hover input:hover+label:after {
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #6f95a3;
-    top: 1em;
+    top: 15px;
     rotate: 90deg;
     transition: rotate 0.5s, color 0.5s;
 }
@@ -63,6 +76,10 @@
     h1 {
         text-align: center;
     }
+    .bayan-container label {
+        height: 40px;
+        line-height: 45px;
+    }
     .bayan-container {
         width: 70%;
     }
@@ -70,8 +87,6 @@
 
 @media screen and (max-width: 320px) {
 
-    .bayan-container label {
-    }
     .bayan-container {
         width: 90%;
     }
