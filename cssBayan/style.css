@@ -32,7 +32,8 @@
     border-top: .1px solid black;
     transition: height 0.3s ease-in-out;
 }
-.bayan-container label img {
+.img {
+    height: 250px;
     background-position-x: center;
     background-position-y: 50px;
     background-size: contain;
@@ -68,7 +69,7 @@
     transition: rotate 0.5s, color 0.5s;
 }
 
-label[for="bayan-1"] .img {
+/* label[for="bayan-1"] .img {
     background-image: url(../images/congrats.svg);
 }
 
@@ -86,7 +87,7 @@ label[for="bayan-4"] .img {
 
 label[for="bayan-5"] .img {
     background-image: url(../images/github-friends.svg);
-}
+} */
 
 @media screen and (max-width: 800px) {
     body {
