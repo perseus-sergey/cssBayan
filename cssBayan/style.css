@@ -34,7 +34,7 @@
     margin: auto;
 }
 .bayan-container label:hover .img,
-.bayan-container input:checked .img {
+.bayan-container input:checked~label .img {
     display: block;
 }
 
