@@ -25,12 +25,18 @@
     line-height: 33px;
     font-size: 1em;
     background-color: rgb(196, 232, 255);
-    background-position-x: center;
+    /* background-position-x: center;
     background-position-y: 50px;
     background-size: 35%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     border-top: .1px solid black;
     transition: height 0.3s ease-in-out;
+}
+.bayan-container label img {
+    background-position-x: center;
+    background-position-y: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bayan-container input {
@@ -62,23 +68,23 @@
     transition: rotate 0.5s, color 0.5s;
 }
 
-label[for="bayan-1"] {
+label[for="bayan-1"] .img {
     background-image: url(../images/congrats.svg);
 }
 
-label[for="bayan-2"] {
+label[for="bayan-2"] .img {
     background-image: url(../images/git-problem.svg);
 }
 
-label[for="bayan-3"] {
+label[for="bayan-3"] .img {
     background-image: url(../images/git-remote.svg);
 }
 
-label[for="bayan-4"] {
+label[for="bayan-4"] .img {
     background-image: url(../images/glory-to-ukraine.svg);
 }
 
-label[for="bayan-5"] {
+label[for="bayan-5"] .img {
     background-image: url(../images/github-friends.svg);
 }
 
@@ -92,8 +98,8 @@ label[for="bayan-5"] {
     .bayan-container label {
         height: 40px;
         line-height: 43px;
-        background-size: 40%;
-        background-position-y: 50px;
+        /* background-size: 40%;
+        background-position-y: 50px; */
     }
     .bayan-container {
         width: 70%;
@@ -103,8 +109,8 @@ label[for="bayan-5"] {
 @media screen and (max-width: 320px) {
 
     .bayan-container label {
-        background-size: 55%;
-        background-position-y: 70px;
+        /* background-size: 55%;
+        background-position-y: 70px; */
     }
     .bayan-container {
         width: 90%;
