@@ -29,13 +29,14 @@
     transition: height 0.3s ease-in-out;
 }
 .img {
-    height: 250px;
-    display: none;
+    height: 0px;
     margin: auto;
 }
 .bayan-container label:hover .img,
 .bayan-container input:checked~label .img {
     display: block;
+    height: 250px;
+    transition: height .3s ease-in-out;
 }
 
 .bayan-container input {
