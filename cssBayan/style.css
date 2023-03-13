@@ -30,13 +30,16 @@
 }
 .img {
     height: 0px;
+    opacity: 0;
+    display: block;
     margin: auto;
+    transition: height .3s, opacity .3s;
 }
 .bayan-container label:hover .img,
 .bayan-container input:checked~label .img {
-    display: block;
+    opacity: 1;
     height: 250px;
-    transition: height .3s ease-in-out;
+    transition: height .3s, opacity .3s;
 }
 
 .bayan-container input {
