@@ -22,7 +22,7 @@
     cursor: pointer;
     color: #777;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-    line-height: 33px;
+    line-height: 35px;
     font-size: 1em;
     background-color: rgb(196, 232, 255);
     border-top: .1px solid black;
@@ -30,8 +30,12 @@
 }
 .img {
     height: 250px;
-    display: block;
+    display: none;
     margin: auto;
+}
+.bayan-container label:hover .img,
+.bayan-container input:checked .img {
+    display: block;
 }
 
 .bayan-container input {
@@ -72,7 +76,7 @@
     }
     .bayan-container label {
         height: 40px;
-        line-height: 43px;
+        line-height: 45px;
     }
     .bayan-container {
         width: 70%;
